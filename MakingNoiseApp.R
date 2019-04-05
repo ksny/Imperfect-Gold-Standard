@@ -259,7 +259,10 @@ ui <- fluidPage(
       HTML('* For example, a ratio of 1:1 means that misclassifications are equally likely for positive and negative samples whereas
          a ratio of 2:1 means that true negative samples are twice as likely to be misclassified as positive (FP)
          than true positive samples are likely to be misclassified as negative (FN).'),br(),br(),
-      actionButton('go','Perform Simulation')
+      actionButton('go','Perform Simulation',icon=icon('arrow-circle-right')),
+      br(),br(),
+      actionButton('source','View Source Code',icon=icon('code'),
+                   onclick='window.open("https://github.com/ksny/Imperfect-Gold-Standard/blob/master/MakingNoiseApp.R","_blank")')
     ),
     
     mainPanel(
