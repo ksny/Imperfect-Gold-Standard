@@ -262,7 +262,10 @@ ui <- fluidPage(
       actionButton('go','Perform Simulation',icon=icon('arrow-circle-right')),
       br(),br(),
       actionButton('source','View Source Code',icon=icon('code'),
-                   onclick='window.open("https://github.com/ksny/Imperfect-Gold-Standard/blob/master/MakingNoiseApp.R","_blank")')
+                   onclick='window.open("https://github.com/ksny/Imperfect-Gold-Standard/blob/master/MakingNoiseApp.R","_blank")'),
+      br(),br(),
+      actionButton('paper','View Publication',icon=icon('file-alt'),
+                   onclick='window.open("https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0217146&type=printable")')
     ),
     
     mainPanel(
